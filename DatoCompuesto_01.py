@@ -8,18 +8,18 @@ print ("Funcion separar lista")
 listaNumerica = [10, 7, 4, 5, 8, 1, 2, 11]
 print("Tu lista original es: "+ str(listaNumerica))
 listaNumerica.sort()
-listaordenada = listaNumerica
 
-print(f"Despues de ordenar {listaordenada}")
+print(f"Despues de ordenar {listaNumerica}")
 	
-pares = listaordenada
-impares = listaordenada
+pares = []
+impares = []
 
-for n in listaordenada:
-		if n % 2 == 0:
-			pares.append(n)
-		else:
-			impares.append(n)	
+for n in listaNumerica:
+	if n % 2 == 0:
+	   pares.append(n)
+	else:
+	   impares.append(n)	
+	
 
 print(f"Pares Ordenados {pares}")
-print(f"Impares Ordenados{impares}")
+print(f"Impares Ordenados {impares}")
